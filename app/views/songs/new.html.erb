@@ -1,2 +1,10 @@
 <h1>Songs#new</h1>
 <p>Find me in app/views/songs/new.html.erb</p>
+
+<%= form_with(model: @song, local: true) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Back", billboards_path  %>

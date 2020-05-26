@@ -1,2 +1,12 @@
-<h1>Billboards#new</h1>
+<h1>Create New Billboard</h1>
 <p>Find me in app/views/billboards/new.html.erb</p>
+
+<%# <%= form_for @billboard do |f| %>
+<%= form_with(model: @billboard, local: true) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Back", billboards_path  %>
+

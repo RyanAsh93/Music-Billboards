@@ -1,0 +1,9 @@
+<h1>Edit Billboard</h1>
+<%= form_with(model: @billboard, local: true) do |f| %>
+  <br>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Back", billboards_path%>
