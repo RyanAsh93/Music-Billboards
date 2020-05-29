@@ -1,4 +1,3 @@
 class Billboard < ApplicationRecord
-  belongs_to :artist
-  belongs_to :song
+  has_many :artists
 end
